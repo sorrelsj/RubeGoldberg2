@@ -15,7 +15,7 @@
         }
         header {
             background: linear-gradient(to right, #007BFF, #00C6FF);
-            color: white;
+            color: white; /* Ensures the header text, including the title, is white */
             padding: 2rem 0;
             text-align: center;
             border-bottom: 4px solid #0056b3;
@@ -43,7 +43,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3 {
-            color: #007BFF;
+            color: #007BFF; /* Keeps section titles blue */
         }
         footer {
             text-align: center;
@@ -56,7 +56,7 @@
             display: inline-block;
             padding: 10px 20px;
             color: white;
-            background: linear-gradient(to right, #0056b3, #007BFF);
+            background: linear-gradient(to left, #00C6FF, #007BFF); /* Inverse gradient */
             text-decoration: none;
             border-radius: 5px;
             margin: 1rem 0;
@@ -64,7 +64,7 @@
             transition: all 0.3s ease;
         }
         .button:hover {
-            background: linear-gradient(to right, #004080, #0056b3);
+            background: linear-gradient(to left, #007BFF, #004080); /* Darker inverse gradient on hover */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         img {
