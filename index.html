@@ -59,11 +59,13 @@
         }
         .how-it-works {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             gap: 1rem;
         }
         .how-it-works img {
-            max-width: 49%;
+            flex: 1 1 calc(33% - 1rem);
+            max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -109,7 +111,7 @@
             <img src="rubegoldbergboxpic.png" alt="Final Assembly">
         </div>
         <p>My part of the machine needs paired Arduino code for it to function properly. The input from the previous machine will start the process by actuating the gate at the top and allowing the cart to begin rolling down the ramp. This gate is connected to the Arduino circuitry, and it is implementing a short delay for the second gate. After this delay, the gate will open which allows for a small steel ball to drop into the cart. Afterwards, the cart will travel through the rest of the machine with the ball safely tucked inside. At the end of the last ramp, the cart will hit a lip which will eject the steel ball out of the cart and through the exit door at the end of the machine, becoming the input for the next part of the entire machine.</p>
-    <div class="how-it-works">
+        <div class="how-it-works">
             <img src="Screenshot (120).png" alt="Some Calculations">
             <img src="Screenshot (121).png" alt="Some Calculations">
             <img src="Screenshot (122).png" alt="Some Calculations">
