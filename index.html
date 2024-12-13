@@ -50,9 +50,10 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 2rem;
-            background: white;
+            background: linear-gradient(to bottom, #ffffff, #f3e6ff);
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #ddd;
         }
         h1, h2, h3 {
             color: #7b50ff;
@@ -103,6 +104,15 @@
             background: linear-gradient(to right, #7b50ff, #507bff);
             color: white;
             margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .how-it-works img {
+                flex: 1 1 100%;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
         }
     </style>
 </head>
