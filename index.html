@@ -57,27 +57,26 @@
         h1, h2, h3 {
             color: #7b50ff;
         }
+        .how-it-works {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .how-it-works img {
+            max-width: 49%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .how-it-works p {
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
         footer {
             text-align: center;
             padding: 1rem;
             background: linear-gradient(to right, #7b50ff, #507bff);
             color: white;
             margin-top: 2rem;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: white;
-            background: linear-gradient(to right, #507bff, #7b50ff);
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 1rem 0;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        .button:hover {
-            background: linear-gradient(to right, #7b50ff, #5040a1);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -105,8 +104,16 @@
 
     <section id="how-it-works">
         <h2>How It Works</h2>
-        <p>My part of the Rube Goldberg machine involves a water wheel that spins a gear, triggering a hammer to strike and activate the next component.</p>
-        <img src="machine-demo.jpg" alt="Machine Demonstration" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 1rem 0;">
+        <div class="how-it-works">
+            <img src="how_it_works_1.png" alt="How It Works Step 1">
+            <img src="how_it_works_2.png" alt="How It Works Step 2">
+        </div>
+        <p>My part of the machine needs paired Arduino code for it to function properly. The input from the previous machine will start the process by actuating the gate at the top and allowing the cart to begin rolling down the ramp. This gate is connected to the Arduino circuitry, and it is implementing a short delay for the second gate. After this delay, the gate will open which allows for a small steel ball to drop into the cart. Afterwards, the cart will travel through the rest of the machine with the ball safely tucked inside. At the end of the last ramp, the cart will hit a lip which will eject the steel ball out of the cart and through the exit door at the end of the machine, becoming the input for the next part of the entire machine.</p>
+    <div class="how-it-works">
+            <img src="Screenshot (120)".png" alt="Some Calculations">
+            <img src="Screenshot (121)".png" alt="Some Calculations">
+            <img src="Screenshot (122)".png" alt="Some Calculations">
+        </div>
     </section>
 
     <section id="links">
